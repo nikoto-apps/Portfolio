@@ -20,17 +20,17 @@ import { CommonModule } from '@angular/common';
             <div class="bg-gray-800 bg-opacity-10 rounded-xl shadow-lg p-6 animate-slide-in flex flex-col">
               
              
-              <h3 class="text-2xl font-bold text-white mb-2">{{ project.title }}</h3>
+              <h3 class="text-2xl font-bold text-white mb-2">{{ project?.title }}</h3>
               
              
               <p class="text-sm text-white italic mb-4 text-justify">
-                {{ project.desc }}
+                {{ project?.desc }}
               </p>
               
             
               <div >
                 <video 
-                  [src]="project.video" 
+                  [src]="project?.video" 
                   controls 
                   class="w-full h-56 rounded-lg shadow-md mb-4 object-cover">
                 </video>
@@ -38,14 +38,14 @@ import { CommonModule } from '@angular/common';
 
               
               <ul class="flex flex-wrap gap-3 mb-6">
-                @for(tech of project.stack; track $index) {
+                @for(tech of project?.stack; track $index) {
                   <li [ngClass]="[tech.bgColor, 'text-white', 'text-sm', 'px-3', 'py-1', 'rounded-full', 'shadow-md']">
                     {{ tech.name }}
                   </li>
                 }
               </ul>
               <a
-                [href]="project.href"
+                [href]="project?.href"
                 target="_blank"
                 class="mt-auto bg-[#6e40c9] hover:bg-[#5a2bb7] text-white font-semibold text-center px-5 py-3 rounded-lg shadow-md transition duration-300 ease-in-out"
               >
@@ -110,6 +110,7 @@ L’application repose sur un frontend Angular et un backend Spring Boot exposan
       title: "CookChef",
       video:'assets/video/video_CookChef.mp4',
       desc:`CookChef est une application web conçue pour permettre aux amateurs de cuisine de découvrir, créer et gérer leurs recettes préférées. Les utilisateurs peuvent se connecter pour ajouter de nouvelles recettes, modifier, supprimer des recettes et conserver une liste de leurs plats préférés.`,
+      href:'https://github.com/NikotoKoto/CookChef',
       stack:[
         {
           name: "React",
@@ -119,6 +120,20 @@ L’application repose sur un frontend Angular et un backend Spring Boot exposan
           name: 'API',
           bgColor:'bg-slate-500'
         }
+      ]
+    },
+    ,
+    {
+      title: "Product",
+      video:'assets/video/Desserts.mp4',
+      desc:`Products est une application web conçue pour permettre d'ajouter un produit dans un panier en choisissant les quantités avec un panier reactif. Les datas ne sont pas persistés mais en brut dans le code.`,
+      href:'https://github.com/NikotoKoto/Product',
+      stack:[
+        {
+          name: "Angular",
+          bgColor: 'bg-[#61DAFB]'
+        },
+        
       ]
     }
   ];
