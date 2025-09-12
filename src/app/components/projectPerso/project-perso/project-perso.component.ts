@@ -83,6 +83,19 @@ Elle est construite en Full Stack avec un frontend Angular et un backend Spring 
         { name: 'JUnit', bgColor: 'bg-lime-600' }
       ]
     },
+     {
+      title: "Product",
+      video:'assets/video/Desserts.mp4',
+      desc:`Products est une application web conçue pour permettre d'ajouter un produit dans un panier en choisissant les quantités avec un panier reactif. Les datas ne sont pas persistés mais en brut dans le code.`,
+      href:'https://github.com/NikotoKoto/Product',
+      stack:[
+        {
+          name: "Angular",
+          bgColor: 'bg-red-600'
+        },
+        
+      ]
+    },
     {
       title: 'Cocktails',
       video: 'assets/video/video_AngularCocktail.mp4',
@@ -123,18 +136,6 @@ L’application repose sur un frontend Angular et un backend Spring Boot exposan
       ]
     },
     
-    {
-      title: "Product",
-      video:'assets/video/Desserts.mp4',
-      desc:`Products est une application web conçue pour permettre d'ajouter un produit dans un panier en choisissant les quantités avec un panier reactif. Les datas ne sont pas persistés mais en brut dans le code.`,
-      href:'https://github.com/NikotoKoto/Product',
-      stack:[
-        {
-          name: "Angular",
-          bgColor: 'bg-red-600'
-        },
-        
-      ]
-    }
+   
   ];
 }
