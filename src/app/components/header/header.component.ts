@@ -48,12 +48,7 @@ import { Component } from '@angular/core';
             apprendre auprès d’une équipe expérimentée. <br /><br />
             
           </p>
-          <ul>
-            @for(icone of icones; track $index){
-              <li class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{{icone.name}}</li>
-
-            }
-          </ul>
+          
         </div>
 
         <ul
@@ -90,6 +85,10 @@ export class HeaderComponent {
     {
       href: '#about',
       name: 'Mon parcours',
+    },
+    {
+      href: '#Stack',
+      name: 'Mes technos'
     },
     {
       href: '#projectsPro',
@@ -129,29 +128,5 @@ export class HeaderComponent {
       filename: 'Lettre_Motivation_Nicolas_Floris.pdf',
     },
   ];
-  icones = [
-    {
-      name: 'Angular', 
-    }
-    ,{
-      name:'SpringBoot',
-    },
-    {
-      name: 'Java',
-    },{
-      name:'PostgreSQL',
-    },
-    {
-      name: 'Docker'
-    },
-    {
-      name:'Git'
-    },
-    {
-      name:'Jira'
-    },
-    {
-      name:'SCRUM'
-    }
-  ]
+
 }

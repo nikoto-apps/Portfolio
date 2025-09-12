@@ -32,12 +32,12 @@ import { CommonModule } from '@angular/common';
                 <video 
                   [src]="project?.video" 
                   controls 
-                  class="w-full h-56 rounded-lg shadow-md mb-4 object-cover">
+                  class="w-full h-full rounded-lg shadow-md object-contain">
                 </video>
               </div>
 
               
-              <ul class="flex flex-wrap gap-3 mb-6">
+              <ul class="flex mt-5 flex-wrap gap-3 mb-6">
                 @for(tech of project?.stack; track $index) {
                   <li [ngClass]="[tech.bgColor, 'text-white', 'text-sm', 'px-3', 'py-1', 'rounded-full', 'shadow-md']">
                     {{ tech.name }}
@@ -122,7 +122,7 @@ L’application repose sur un frontend Angular et un backend Spring Boot exposan
         }
       ]
     },
-    ,
+    
     {
       title: "Product",
       video:'assets/video/Desserts.mp4',
@@ -131,7 +131,7 @@ L’application repose sur un frontend Angular et un backend Spring Boot exposan
       stack:[
         {
           name: "Angular",
-          bgColor: 'bg-[#61DAFB]'
+          bgColor: 'bg-red-600'
         },
         
       ]
