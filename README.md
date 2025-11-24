@@ -1,59 +1,76 @@
-# Portfolio
+# 🎨 Developer Portfolio — Nicolas Floris
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.1.
+This is my personal portfolio website built with **Angular 17+**, designed to present:
+- my professional projects  
+- my tech stack  
+- my experience and profile  
+- my contact information  
+- my online presence  
 
-## Development server
+The portfolio is lightweight, responsive, animated, and built for performance.
 
-To start a local development server, run:
+---
 
-```bash
-ng serve
-```
+# 🧱 Architecture & Tech Stack
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### **Frontend**
+- Angular 17–19  
+- Standalone Components  
+- Angular Signals  
+- TailwindCSS  
+- TypeScript strict mode  
+- RxJS (for async operations & data streams)  
+- Angular Animations (smooth UI transitions)
 
-## Code scaffolding
+### **UI & Visual Design**
+- Tailwind utility classes  
+- Custom reusable UI components (Button, Card, Section, Navbar)  
+- SVG icons  
+- Framer-like animation logic  
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### **DevOps**
+- Dockerfile for containerized deployment  
+- GitHub Actions CI/CD (optional)  
+- NGINX production server (recommended)  
 
-```bash
-ng generate component component-name
-```
+---
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+# ✨ Features
 
-```bash
-ng generate --help
-```
+### 🏠 Home Page  
+- Clean and modern introduction  
+- Animated typing effect or motion headings  
+- Quick overview of tech stack & mission  
 
-## Building
+### 🧑‍💻 Projects Page  
+Showcases your best real-world projects:
+- **Audace Florale – Full E-Commerce (Hexagonal Architecture)**  
+- **Mini-CRM – Angular + Spring Boot + JWT + Docker**  
+- **Library API – Clean backend design**  
+- **Real-Time Chat – WebSockets + Angular + Spring Boot**
 
-To build the project run:
+Each project displays:
+- Tech stack badges  
+- Description  
+- Repository links  
+- Live demo (if hosted)
 
-```bash
-ng build
-```
+### 🛠 Skills Section  
+- Clear, categorized skill list  
+- Angular / Spring Boot / PostgreSQL / Docker / CI/CD  
+- Icons and badges for clean visual hierarchy  
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+### 🧭 About Me  
+- Short introduction  
+- Your developer journey  
+- Philosophy: Clean code, architecture-first, continuous learning  
 
-## Running unit tests
+### 📨 Contact Section  
+- Contact form or direct links  
+- Email  
+- LinkedIn  
+- GitHub  
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+---
 
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+# 🗂 Folder Structure
